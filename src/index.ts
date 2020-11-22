@@ -1,7 +1,6 @@
+import GameLoop from './classes/GameLoop';
+import './styles/styles.css';
+
 window.addEventListener("load", () => {
-    const header = document.createElement("h1");
-    header.innerText = "Webpack❤️TS"
-  
-    const body = document.querySelector("body");
-    body.appendChild(header);
-  })
+  new GameLoop(document.getElementById('root') as HTMLCanvasElement);
+})
